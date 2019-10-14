@@ -24,8 +24,8 @@ bindsym Print exec screenshot
 bindsym $super+p exec screenshot select
 
 bindsym $super+l exec betterlockscreen -l
-bindsym $super+w exec chromium
-bindsym $super+Shift+f exec thunar;workspace 3;focus
+bindsym $super+w exec firefox 
+bindsym $super+Shift+f exec thunar
 
 #change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
