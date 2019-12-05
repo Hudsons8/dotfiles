@@ -112,7 +112,7 @@ alias vi="vim"
 alias vpn="sudo openvpn"
 alias rs="~/rofi-scripts/rofi-reverse-shells"
 alias nessus="sudo systemctl start nessusd.service && chromium --app=https://nessus:8834"
-
+alias ss="tail -n +2 /usr/share/exploitdb/files_exploits.csv | awk -F ',' '{print \$2 \"\t\" \$3 \"\t(\" \$1 \")\"}' | fzf --preview-window=up --preview='echo {} | cut -d\"	\" -f1 | xargs echo \"/usr/share/exploitdb/\" | tr -d \" \" | xargs bat --color=always' | cut -d'	' -f3 | tr -d \"()\" | xargs searchsploit -m"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -4,5 +4,5 @@ nitrogen --restore
 setxkbmap -layout gb
 xset r rate 200 70
 dunst &
-compton &
+picom &
 exec i3
