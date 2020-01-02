@@ -9,7 +9,8 @@ font pango: Noto Sans 8
 floating_modifier $super
 
 #autostart
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
+exec --no-startup-id /home/stuart/screenlayouts/set_screens.sh
 
 # start a terminal
 bindsym $super+Return exec i3-shell
