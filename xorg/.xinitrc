@@ -7,3 +7,5 @@ xset r rate 200 70
 dunst &
 picom &
 exec i3
+#set_screens &
+#exec startdwm

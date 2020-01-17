@@ -13,8 +13,8 @@ floating_modifier $super
 exec --no-startup-id /home/stuart/screenlayouts/set_screens.sh
 
 # start a terminal
-bindsym $super+Return exec i3-shell
-bindsym $super+o exec i3-shell ranger
+bindsym $super+Return exec spawn-shell
+bindsym $super+o exec spawn-shell ranger
 
 # start dmenu (a program launcher)
 bindsym $super+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=8'"
@@ -25,7 +25,7 @@ bindsym Print exec screenshot
 bindsym $super+p exec screenshot select
 
 bindsym $super+l exec betterlockscreen -l
-bindsym $super+w exec firefox 
+bindsym $super+w exec firefox-developer-edition 
 bindsym $super+Shift+f exec thunar
 
 #change volume
